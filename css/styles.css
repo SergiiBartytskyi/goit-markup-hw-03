@@ -28,6 +28,19 @@ body {
 	margin: 0 auto;
 	outline: 2px solid red;
 }
+h1, h2, h3, h4, h5, h6, ul, p {
+	margin: 0;
+}
+
+ul, p {
+	padding-left: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 .list {
 	list-style: none;
@@ -38,6 +51,12 @@ body {
 }
 
 /* -------header----------*/
+.header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	border: 1px solid #ECECEC;
+}
+
 
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -49,9 +68,6 @@ body {
 
 .header-logo {
 	color: var(--logo-color);
-}
-.header-list {
-	margin: 0;
 }
 
 .header-list .current {
@@ -76,6 +92,7 @@ body {
 }
 
 .contacts-link {
+	font-style: normal
 	font-weight: 500;
 	font-size: 14px;
 	letter-spacing: 0.02em;
@@ -90,10 +107,11 @@ body {
 /* -----------hero---------- */
 .hero {
 	background-color: var(--secondary-bg-color);
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	height: 600px;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
@@ -101,9 +119,9 @@ body {
 	font-size: 44px;
 	line-height: 1.36;
 	color: var(--tertiary-text-color);
-	margin: 0;
+	max-width: 696px;
+	margin: 0 auto;
 	margin-bottom: 30px;
-	width: 696px;
 }
 
 .hero-btn {
@@ -114,7 +132,6 @@ body {
 	line-height: 1.88;
 	letter-spacing: 0.06em;
 	text-decoration: none;
-	text-align: center;
 	color: var(--tertiary-text-color);
 	background-color: var(--primary-btn-color);
 	border-radius: 4px;
@@ -123,8 +140,6 @@ body {
 	cursor: pointer;
 	padding: 10px 32px;
 	min-width: 216px;
-	margin-bottom: 200px;
-	/* #188CE8 */
 }
 
 .hero-btn:hover,
@@ -134,7 +149,12 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.section {
+	padding: 94px 0;
+	
+}
 /* ------------------features------------- */
+
 .features {
 	color: var(--secondary-text-color);
 }
@@ -156,6 +176,7 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: var(--primary-text-color);
+	margin-bottom: 10px;
 }
 .features-text {
 	font-size: 14px;
@@ -164,10 +185,13 @@ body {
 
 /* ------------abaut us------------ */
 
-.abaut-title {
+.abaut-title,
+.teams-title {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+	margin-bottom: 50px;
+
 }
 
 /* --------------team-------------- */
@@ -176,57 +200,73 @@ body {
 	line-height: 1.19;
 }
 
+
 .team-item {
 	background-color: var(--primary-bg-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-}
+	width: 270px;
+	height: 368px;
+	}
 
 .team-photo {
 	border-radius: 0px;
+	margin-bottom: 30px;
 }
 .team-title {
 	font-weight: 500;
 	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 .team-text {
 	color: var(--secondary-text-color);
+	text-align: center;
 }
 
 /* -----------footer--------- */
 .footer {
 	background-color: var(--secondary-bg-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-logo {
 	color: var(--tertiary-text-color);
+	margin-bottom: 20px;
 }
 
-.footer-location {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	color: var(--tertiary-text-color);
+.footer-item {
+	margin-bottom: 9px;
 }
 
-.footer-location:hover,
-.footer-location:focus {
-	color: var(--accent-color);
+.footer-item:last-child {
+	margin-bottom: 0;
 }
 
+.footer-location,
 .footer-link {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
-	color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-location{
+	color: var(--tertiary-text-color);
+}
+
+.footer-link {
+		color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-location:hover,
+.footer-location:focus,
 .footer-link:hover,
 .footer-link:focus {
 	color: var(--accent-color);
 }
+
 
 /* --------------Portfolio------------- */
 
