@@ -143,7 +143,7 @@ img {
 	color: var(--tertiary-text-color);
 	background-color: var(--primary-btn-color);
 	border-radius: 4px;
-	border: 0px solid transparent;
+	border: none;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	cursor: pointer;
 	padding: 10px 32px;
@@ -304,10 +304,10 @@ img {
 	color: var(--primary-text-color);
 	background-color: var(--secondary-btn-color);
 	border-radius: 4px;
-	border: 0px solid transparent;
+	border: none;
 	cursor: pointer;
 	height: 38px;
-	padding: 6px 22px;
+	padding: 6px auto;
 }
 
 .portfolio-btn:hover,
@@ -324,6 +324,7 @@ img {
 	line-height: 2;
 	letter-spacing: 0.06em;
 }
+
 .projects-text {
 	line-height: 1.88;
 	color: var(--secondary-text-color);
