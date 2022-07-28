@@ -28,11 +28,19 @@ body {
 	margin: 0 auto;
 	outline: 2px solid red;
 }
-h1, h2, h3, h4, h5, h6, ul, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
 	margin: 0;
 }
 
-ul, p {
+ul,
+p {
 	padding-left: 0;
 }
 
@@ -54,11 +62,11 @@ img {
 .header {
 	padding-top: 24px;
 	padding-bottom: 25px;
-	border: 1px solid #ECECEC;
+	border: 1px solid #ececec;
 }
 
-
-.logo {
+.logo-h,
+.logo-f {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -151,7 +159,6 @@ img {
 
 .section {
 	padding: 94px 0;
-	
 }
 /* ------------------features------------- */
 
@@ -191,7 +198,6 @@ img {
 	line-height: 1.17;
 	text-align: center;
 	margin-bottom: 50px;
-
 }
 
 /* --------------team-------------- */
@@ -200,14 +206,13 @@ img {
 	line-height: 1.19;
 }
 
-
 .team-item {
 	background-color: var(--primary-bg-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 	width: 270px;
 	height: 368px;
-	}
+}
 
 .team-photo {
 	border-radius: 0px;
@@ -231,9 +236,12 @@ img {
 	padding-bottom: 60px;
 }
 
+.logo-f {
+	margin-bottom: 20px;
+}
+
 .footer-logo {
 	color: var(--tertiary-text-color);
-	margin-bottom: 20px;
 }
 
 .footer-item {
@@ -252,12 +260,12 @@ img {
 	line-height: 1.71;
 }
 
-.footer-location{
+.footer-location {
 	color: var(--tertiary-text-color);
 }
 
 .footer-link {
-		color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-location:hover,
@@ -266,7 +274,6 @@ img {
 .footer-link:focus {
 	color: var(--accent-color);
 }
-
 
 /* --------------Portfolio------------- */
 
@@ -299,8 +306,8 @@ img {
 	border-radius: 4px;
 	border: 0px solid transparent;
 	cursor: pointer;
+	height: 38px;
 	padding: 6px 22px;
-	min-width: 73px;
 }
 
 .portfolio-btn:hover,
