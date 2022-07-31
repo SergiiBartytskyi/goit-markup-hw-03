@@ -23,7 +23,7 @@
 	<body>
 		<!--  Шапка сторінки  -->
 		<header class="header">
-			<div class="container">
+			<div class="container header-container">
 				<nav class="header-nav">
 					<a href="./index.html" class="logo-h link">
 						Web
@@ -57,16 +57,14 @@
 		<!--  Унікальний контент сторінки  -->
 		<main>
 			<section class="hero">
-				<div class="container">
-					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-					<button type="button" class="hero-btn">Замовити послугу</button>
-				</div>
+				<button type="button" class="hero-btn">Замовити послугу</button>
 			</section>
 
 			<section class="features section">
 				<div class="container">
-					<h2 class="features-title">Наші особливості</h2>
+					<h2 class="visually-hidden">Наші особливості</h2>
 
 					<ul class="features-list list">
 						<li class="features-item">
@@ -114,23 +112,31 @@
 					<ul class="team-list list">
 						<li class="team-item">
 							<img src="./images/pd.jpg" alt="продакт дизайнер" class="team-photo" width="270" />
-							<h3 class="team-title">Ігор Дем'яненко</h3>
-							<p class="team-text" lang="en">Product Designer</p>
+							<div class="team-info">
+								<h3 class="team-title">Ігор Дем'яненко</h3>
+								<p class="team-text" lang="en">Product Designer</p>
+							</div>
 						</li>
 						<li class="team-item">
 							<img src="./images/fd.jpg" alt="фронтенд-розробник" class="team-photo" width="270" />
-							<h3 class="team-title">Ольга Рєпіна</h3>
-							<p class="team-text" lang="en">Frontend Developer</p>
+							<div class="team-info">
+								<h3 class="team-title">Ольга Рєпіна</h3>
+								<p class="team-text" lang="en">Frontend Developer</p>
+							</div>
 						</li>
 						<li class="team-item">
 							<img src="./images/m.jpg" alt="маркетолог" class="team-photo" width="270" />
-							<h3 class="team-title">Микола Тарасов</h3>
-							<p class="team-text" lang="en">Marketing</p>
+							<div class="team-info">
+								<h3 class="team-title">Микола Тарасов</h3>
+								<p class="team-text" lang="en">Marketing</p>
+							</div>
 						</li>
 						<li class="team-item">
 							<img src="images/uid.jpg" alt="дизайнер інтерфейсу користувача" class="team-photo" width="270" />
-							<h3 class="team-title">Михайло Єрмаков</h3>
-							<p class="team-text" lang="en">UI Designer</p>
+							<div class="team-info">
+								<h3 class="team-title">Михайло Єрмаков</h3>
+								<p class="team-text" lang="en">UI Designer</p>
+							</div>
 						</li>
 					</ul>
 				</div>
